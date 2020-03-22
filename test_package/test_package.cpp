@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <OgreProcedural/ProceduralStableHeaders.h>
 #include <OgreProcedural/Procedural.h>
 
 int main()
