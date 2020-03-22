@@ -60,3 +60,7 @@ conan_basic_setup()''')
 
     def package_info(self):
         self.cpp_info.libs = ["OgreProcedural_d" if self.settings.build_type == "Debug" else "OgreProcedural"]
+
+        if self.settings.compiler == "Visual Studio":
+            self.cpp_info.bindirs.append(os.path.join("bin", str(self.settings.build_type)))
+            self.cpp_info.libdirs.append(os.path.join("lib", str(self.settings.build_type)))
