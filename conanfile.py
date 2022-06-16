@@ -4,7 +4,7 @@ import os
 
 class OgreProceduralConan(ConanFile):
     name = "ogre-procedural"
-    version = "0.3.200322"
+    version = "0.3.220412"
     license = "MIT"
     author = "konrad.no.tantoo"
     url = "https://github.com/KonradNoTantoo/ogreprocedural_conan"
@@ -20,13 +20,13 @@ class OgreProceduralConan(ConanFile):
         "type": "git",
         "subfolder": folder_name,
         "url": "https://github.com/OGRECave/ogre-procedural.git",
-        "revision": "89b9abca873925e344d0c4e0e6d4dd7390e41c5b",
+        "revision": "e3fe5b69a32faa3a66fed4a94bd1bce90e3ee7b9",
         "submodule": "recursive" 
     }
 
 
     def requirements(self):
-        self.requires("ogre3d/1.12.5@utopia/testing")
+        self.requires("ogre3d/13.4.0@utopia/testing")
 
 
     def source(self):
